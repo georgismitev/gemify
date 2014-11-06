@@ -48,11 +48,10 @@ cp ../template/MIT-LICENSE .
 echo '# coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "'$GEMNAME'/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "'$GEMNAME'"
-  spec.version       = '$MODULE_NAME'::VERSION
+  spec.version       = "0.0.1"
   spec.authors       = ["Greg"]
   spec.email         = ["georgi@fonii.com"]
   spec.summary       = %q{Write a short summary. Required.}
@@ -69,7 +68,7 @@ end' > $GEMNAME.gemspec
 
 # build the gem
 rake build
-  
+
 # temp private token
 USERNAME=rebelact
 PRIVATE_TOKEN='private-token-goes-here'
