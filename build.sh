@@ -42,8 +42,8 @@ echo "module $MODULE_NAME
   end
 end" > lib/$GEMNAME.rb
 
-cp ../template/README.md .
-cp ../template/MIT-LICENSE .
+cp ../templates/README.md .
+cp ../templates/MIT-LICENSE .
 
 echo '# coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
